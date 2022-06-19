@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "ECommerce.Service";
+
+package customers;
+
+// The customer service definition.
+service CustomerManager {
+	// Obtain all customers
+	rpc GetAll (Empty) returns (Clients);
+	// Obtain one customer
+	rpc Get (ClientId) returns (Client);
+}
+
+message Empty{}
+
+message ClientId{
+	string id = 1;
+}
+
+message Client {
+	string id = 1;
+	string name = 2;
+	string dob = 3; 
+}
+
+message Clients {
+	repeated Client items = 1;
+}
