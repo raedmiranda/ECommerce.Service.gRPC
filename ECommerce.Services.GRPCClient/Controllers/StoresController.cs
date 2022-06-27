@@ -1,11 +1,11 @@
 ﻿using ECommerce.Service;
 using ECommerce.Service.Protos;
-using ECommerce.Services.GRPCClient.Models;
+using ECommerce.Service.GRPCClient.Models;
 using Grpc.Net.Client;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ECommerce.Services.GRPCClient.Controllers
+namespace ECommerce.Service.GRPCClient.Controllers
 {
     public class StoresController : Controller
     {

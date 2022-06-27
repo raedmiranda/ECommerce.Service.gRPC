@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Service", "ECommerce.Service\ECommerce.Service.csproj", "{1E166AA9-F21D-4CCE-954A-E841FDC562F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.GRPCClient", "ECommerce.Services.GRPCClient\ECommerce.Services.GRPCClient.csproj", "{88F3DA75-BC68-4B0D-8990-E48D7A545150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Service.GRPCClient", "ECommerce.Services.GRPCClient\ECommerce.Service.GRPCClient.csproj", "{88F3DA75-BC68-4B0D-8990-E48D7A545150}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace ECommerce.Services.GRPCClient.Models
+﻿namespace ECommerce.Service.GRPCClient.Models
 {
     public class StoreModel
     {

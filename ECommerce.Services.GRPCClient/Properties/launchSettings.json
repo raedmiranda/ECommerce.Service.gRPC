@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "ECommerce.Services.GRPCClient": {
+    "ECommerce.Service.GRPCClient": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

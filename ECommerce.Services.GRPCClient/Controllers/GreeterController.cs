@@ -2,7 +2,7 @@
 using ECommerce.Service;
 using Grpc.Net.Client;
 
-namespace ECommerce.Services.GRPCClient.Controllers
+namespace ECommerce.Service.GRPCClient.Controllers
 {
     public class GreeterController : Controller
     {

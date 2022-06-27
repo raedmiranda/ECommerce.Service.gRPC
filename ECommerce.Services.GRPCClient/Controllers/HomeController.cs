@@ -1,8 +1,8 @@
-﻿using ECommerce.Services.GRPCClient.Models;
+﻿using ECommerce.Service.GRPCClient.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace ECommerce.Services.GRPCClient.Controllers
+namespace ECommerce.Service.GRPCClient.Controllers
 {
     public class HomeController : Controller
     {
