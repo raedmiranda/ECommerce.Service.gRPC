@@ -1,3 +1,35 @@
 syntax = "proto3";
 
 option csharp_namespace = "ECommerce.Service.Protos";
+
+package stores;
+
+// The store service definition.
+service StoreManager {
+	// Obtain all stores
+	rpc GetAll (EmptyS) returns (Stores);
+	// Obtain one store
+	rpc Get (StoreId) returns (Store);
+	// Register one store
+	rpc Insert (Store) returns (Status);
+}
+
+message EmptyS {}
+
+message Status {
+	string statusText = 1;
+}
+
+message StoreId {
+	string id = 1;
+}
+
+message Store {
+	string id = 1;
+	string name = 2;
+	string city = 3;
+}
+
+message Stores {
+	repeated Store items = 1;
+}

@@ -19,6 +19,9 @@
     <Protobuf Include="..\ECommerce.Service\Protos\greet.proto" GrpcServices="Client">
       <Link>Protos\greet.proto</Link>
     </Protobuf>
+    <Protobuf Include="..\ECommerce.Service\Protos\store.proto" GrpcServices="Client">
+      <Link>Protos\store.proto</Link>
+    </Protobuf>
   </ItemGroup>
 
 </Project>

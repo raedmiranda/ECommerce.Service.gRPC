@@ -12,7 +12,7 @@ service CustomerManager {
 	rpc Get (ClientId) returns (Client);
 }
 
-message Empty{}
+message Empty {}
 
 message ClientId{
 	string id = 1;

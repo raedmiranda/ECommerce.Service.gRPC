@@ -4,7 +4,7 @@ using Microsoft.Data.SqlClient;
 
 namespace ECommerce.Service.Services
 {
-    public class CustomerManagerService: CustomerManager.CustomerManagerBase
+    public class CustomerManagerService : CustomerManager.CustomerManagerBase
     {
         private readonly ILogger<CustomerManagerService> _logger;
         private List<Client> customers;
