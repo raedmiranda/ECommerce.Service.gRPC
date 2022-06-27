@@ -34,7 +34,7 @@ namespace ECommerce.Service.Services
         {
             Protos.Status result = new Protos.Status();
             result.StatusText = insercion(request);
-            return base.Insert(request, context);
+            return Task.FromResult(result);
         }
 
         #region Falsos métodos DAO
@@ -66,6 +66,9 @@ namespace ECommerce.Service.Services
         string insercion(Store entity)
         {
             string response = "NoOK";
+            entity.Id = $"{int.Parse(stores.MaxBy(e => e.Id).Id) + 1}";
+            entity.City = DateTime.Now.ToString("MM/dd/yyyy"); //falso mockeo pq usa la misma tabla Clientes, q tiene Dob como date
+
             try
             {
                 using (SqlConnection cn = new SqlConnection(connectionstring))
